@@ -52,7 +52,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
+INTERNAL_IPS = [
+    # ...
+   "http://127.0.0.1:8000/",
+    # ...
+]
 
 ROOT_URLCONF = 'mosh.urls'
 
@@ -103,11 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-INTERNAL_IPS = [
-    # ...
-   "127.0.0.1",
-    # ...
-]
+
 
 
 # Internationalization
