@@ -36,8 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'store'
+    'tags'
+    'playground',
     'debug_toolbar'
-    'playground'
     
 ]
 
@@ -54,7 +56,7 @@ MIDDLEWARE = [
 
 INTERNAL_IPS = [
     # ...
-   "http://127.0.0.1:8000/",
+   "127.0.0.1",
     # ...
 ]
 
