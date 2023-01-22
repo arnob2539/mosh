@@ -7,5 +7,16 @@
         {% else %}
         <h1>Hello World!</h1>
         {% endif %}
+        <ul>
+            {% for collection in collections %}
+            <li>{{ collection.id }}</li>
+            <!--<ul>
+                
+                <li>{{ customer.first_name }}</li>
+                
+            </ul>
+        -->
+            {% endfor %}
+        </ul>
     </body>
 </html>
